@@ -1,0 +1,10 @@
+<div class="app-root">
+  <h3>Sort numbers</h3>
+  <form #numbersForm="ngForm" (ngSubmit)="onSubmit(numbersForm.value)">
+    <label>Input numbers (separated by commas, ex. 5,2,3,75,53)</label><br>
+    <input type="text" name="numbers" ngModel><br>
+    <input type="submit" value="Sort"><br>
+    <label>Sorted numbers</label><br>
+    <input type="text" value="{{sortNum}}" />
+  </form>
+</div>
